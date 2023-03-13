@@ -5,7 +5,7 @@ After cloning this repository, run the following commands to install the necessa
   
 ``cd tq-project``
 
-``./install_salt.sh``
+``. ./install_salt.sh``
 
 To configure your server run:
 
