@@ -1,4 +1,6 @@
+{% from "ec2/map.jinja" import ec2 with context %}
+
 external_ip:
   cmd.run:
-    - name: curl -s http://169.254.169.254/latest/meta-data/public-ipv4/ > /home/ubuntu/my_public_ip.txt; cat /home/ubuntu/my_public_ip.txt
-    - unless: test -e /home/ubuntu/my_public_ip.txt
+    - name: curl -s {{ec2.metadata_endpoint.public_ipv4}} > {{ec2.public_ip_file.name}}; cat {{ec2.public_ip_file.name}}
+    - unless: test -e {{ec2.public_ip_file.name}}
