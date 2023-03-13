@@ -1,12 +1,12 @@
 base:
   '*':
-    - ec2
     - apt.update
+    - ec2
     - sysctl
     - iptables
     - java
     - tomcat
     - tomcat.configure_users
     - tomcat.deploy_edg
-    - tomcat.enabled
-    - tomcat.running
+    - tomcat.service.enabled
+    - tomcat.service.running
