@@ -1,7 +1,7 @@
 # tq-project
 ## Installation ##
 
-After cloning this repository, run the following commands to install the necessary software and configuration files:
+After cloning this repository run the following commands to install the necessary software and configuration files:
   
 ``cd tq-project``
 
