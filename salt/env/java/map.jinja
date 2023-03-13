@@ -1,0 +1,12 @@
+{% set java = salt['grains.filter_by'] (
+  {
+    'Ubuntu': {
+      'java': {
+        'pkg': {
+          'name': 'openjdk-11-jre-headless',
+        },
+      },
+    }
+  }, merge=salt['pillar.get']('java')
+)
+%}

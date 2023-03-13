@@ -1,0 +1,25 @@
+{% set tomcat = salt['grains.filter_by'] (
+  {
+    'Ubuntu': {
+      'tomcat': {
+        'pkg': {
+          'name': 'tomcat9',
+        },
+        'users': {
+          'file': {
+            'name': '/etc/tomcat9/tomcat-users.xml',
+          },
+          'lockfile': {
+            'name': '/etc/tomcat9/.tomcat-users.lock',
+          },
+        },
+        'webapps': {
+          'dir': {
+            'name': '/var/lib/tomcat9/webapps',
+          },
+        }
+      },
+    }
+  }, merge=salt['pillar.get']('tomcat')
+)
+%}
