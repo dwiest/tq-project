@@ -1,0 +1,7 @@
+file_roots:
+  base:
+    - /home/ubuntu/tq-project/salt/env
+
+pillar_roots:
+  base:
+    - /home/ubuntu/tq-project/salt/pillar
