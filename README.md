@@ -9,9 +9,9 @@ After cloning this repository, run the following commands to install the necessa
 
 To configure your server run:
 
-  ``sudo salt-call --local state.highstate``
+  ``sudo salt-call --local state.highstate | tee /tmp/highstate.out``
 
-The command will take a few minutes to complete before displaying output.
+The command will take a few minutes to complete before displaying output (also saved to **/tmp/highstate.out**).
 
 To verify the installation was successful run:
 
