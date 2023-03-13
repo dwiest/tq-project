@@ -1,7 +1,7 @@
 # tq-project
 ## Installation ##
 
-After cloning this repository, change to the tq-project directory and run install_salt.sh install and start a local salt-minion service.
+After cloning this repository, change to the tq-project directory and run "**. ./install_salt.sh**" to install the necessary software and configuration files.
 
 To configure your server run:
 
