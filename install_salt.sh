@@ -8,6 +8,3 @@ sudo apt-get update
 sudo apt-get -y install salt-minion
 
 sudo cp ./minion /etc/salt/minion
-
-sudo systemctl enable salt-minion.service
-sudo systemctl start salt-minion.service
