@@ -1,5 +1,5 @@
 edg:
   zipfile:
-    name: /home/ubuntu/TopBraid-EDG.zip
+    name: /home/ubuntu/tq-project/TopBraid-EDG.zip
   warfile:
     name: edg.war
