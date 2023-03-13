@@ -3,7 +3,7 @@
 tomcat_users:
   cmd.run: # backup dist file
     - name: cp {{tomcat.users.file.name}} {{tomcat.users.file.name}}.bak
-    - unless: test -e {{tomcat.users.lockfile.name}}
+    - unless: test -e {{tomcat.users.lockfile.name}} -o ! -e {{tomcat.users.file.name}}
   file.managed:
     - name: {{tomcat.users.file.name}}
     - source: {{tomcat.users.file.source}}
