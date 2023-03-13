@@ -23,4 +23,4 @@ You should also be able to connect to port 80 from a remote server, e.g.:
 
   ``curl http://this_server/edg/``
 
-The public IP of your server should be stored in /home/ubuntu/my_public_ip.txt
+The public IP of your server should be stored in **/home/ubuntu/my_public_ip.txt**
