@@ -1,11 +1,13 @@
 # tq-project
-Please run install_salt.sh from this directory to install and start a local salt-minion service.
+## Installation ##
 
-To configure your server please run:
+After cloning this repository, change to the tq-project directory and run install_salt.sh install and start a local salt-minion service.
+
+To configure your server run:
 
   sudo salt-call --local state.highstate
 
-To verify the installation was successful, please run:
+To verify the installation was successful run:
 
   curl http://localhost:8080/edg/
 
