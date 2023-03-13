@@ -1,3 +1,6 @@
+iptables-persistent:
+  pkg.installed
+
 tomcat:
   iptables.append:
     - table: nat
